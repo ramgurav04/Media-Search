@@ -4,7 +4,7 @@ const searchSlice = createSlice({
   name: "search ",
   initialState: {
     query: "",
-    activeTab: "",
+    activeTab: "photos",
     results: [],
     loading: false,
     error: null,
@@ -13,11 +13,12 @@ const searchSlice = createSlice({
     setQuery(state, action) {
       state.query = action.payload;
     },
-    setActiveTbs(state, action) {
-      state.ActiveTbs = action.payload;
+    setActiveTab(state, action) {
+      state.activeTab = action.payload;
     },
     setResults(state, action) {
-      state.Results = action.payload;
+       console.log("Reducer received:", action.payload); // Debug log
+      state.results = action.payload; // ✅ Direct assignment
     },
     setLoading(state, action) {
       state.Loading = true;
@@ -27,12 +28,12 @@ const searchSlice = createSlice({
       state.Error = action.payload;
       state.loading = false;
     },
-    clearResults(state){
-        state.results = []
-    }
+    clearResults(state) {
+      state.results = [];
+    },
   },
 });
 
-export const { setQuery, setActiveTbs, setError, setLoading, setResults } =
+export const { setQuery, setActiveTab, setError, setLoading, setResults } =
   searchSlice.actions;
 export const searchReducer = searchSlice.reducer;
