@@ -1,15 +1,14 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addToCollection , addToast } from "../redux/features/CollectinSlice";
+import { removeCollection, removeTost } from "../redux/features/CollectinSlice";
 
-const ResultCard = ({ item }) => {
+const CollectinCard = ({ item }) => {
   const dispatch = useDispatch();
 
-  const addCollection = (item) => {
-    dispatch(addToCollection(item));
-    dispatch(addToast()); 
+  const removeToCollection = (item) => {
+    dispatch(removeCollection(item));
+    dispatch(removeTost());
   };
-    
   return (
     <div className="relative w-[18vw] min-w-[200px] bg-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
       <div className="relative h-64 overflow-hidden">
@@ -50,15 +49,15 @@ const ResultCard = ({ item }) => {
         </a>
         <button
           onClick={() => {
-            addCollection(item);
+             removeToCollection(item);
           }}
-          className="bg-blue-600 text-sm font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors ml-0.5"
+          className="bg-red-600 text-sm font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors ml-0.5"
         >
-          Save
+          Remove
         </button>
       </div>
     </div>
   );
 };
 
-export default ResultCard;
+export default CollectinCard;

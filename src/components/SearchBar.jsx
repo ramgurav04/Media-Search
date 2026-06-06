@@ -15,7 +15,7 @@ export const SearchBar = () => {
 
   return (
     <div>
-      <form className="flex gap-5 p-10 bg-gray-800 rounded-lg shadow-lg" onSubmit={submitHandler}>
+      <form className="flex gap-5 p-10 bg-(--c1) rounded-lg shadow-lg" onSubmit={submitHandler}>
         <input
           value={text}
           onChange={(e) => setText(e.target.value)}
