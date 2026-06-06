@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* {
+  font-family: "helvetica new", sans-serif;
+}
+
+:root {
+  --c1: rgb(0, 0, 0)
+  --c2: rgb(118, 182, 102);  
+  --c3: rgb(216, 224, 93);  
+  --c4: rgb(234, 224, 207);  
+}
