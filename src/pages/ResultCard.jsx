@@ -52,7 +52,7 @@ const ResultCard = ({ item }) => {
           onClick={() => {
             addCollection(item);
           }}
-          className="bg-blue-600 text-sm font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors ml-0.5"
+          className="bg-blue-600 text-sm font-medium py-2 px-4 rounded-lg  transition-colors ml-0.5 hover:bg-blue-950"
         >
           Save
         </button>

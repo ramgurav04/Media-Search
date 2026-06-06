@@ -21,7 +21,6 @@ const collectionSlice = createSlice({
   },
   reducers: {
     addToCollection: (state, action) => {
-      // Guard clause: Ensure payload and payload.id exist
       if (!action.payload || !action.payload.id) return;
 
       const alreadyExists = state.items.find(

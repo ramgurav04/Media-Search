@@ -51,7 +51,7 @@ const CollectinCard = ({ item }) => {
           onClick={() => {
              removeToCollection(item);
           }}
-          className="bg-red-600 text-sm font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors ml-0.5"
+          className="bg-red-600 text-sm font-medium py-2 px-4 rounded-lg hover:bg-red-800 transition-colors ml-0.5"
         >
           Remove
         </button>
