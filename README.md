@@ -1,21 +1,26 @@
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # Media-Search
 This make only learn Redux ToolKit. A modern, responsive media search application built with React that allows users to search and discover Videos and Photos other media content.
->>>>>>> dfe5f0f10ccab8ef1fc4bab4c18985fee4ad8eb6
+
+🎯 Installation & Setup
+Live Browser Link = media-search-plum.vercel.app
+
+Local : 
+1. **Clone the repository**
+
+```bash
+git clone  https://github.com/ramgurav04/Media-Search
+cd  REACTAPI
+
+npm i 
+
+npm run dev
+```
+
+## 🚀 Tech Stack
+
+- **React 18+** - Frontend framework
+- **Axios** - API requests
+- **React Router DOM** - Navigation
+- **Tailwind CSS / Styled Components** - Styling
+- **React Query / Redux Toolkit** - State management
+- **Vite / Create React App** - Build tool
