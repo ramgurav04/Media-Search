@@ -4,7 +4,7 @@ import {
   setLoading,
   setError,
   setResults,
-} from "../redux/features/searchSlice";
+} from "../redux/features/SearchSlice";
 import { useEffect } from "react";
 import ResultCard from "../pages/ResultCard";
 
