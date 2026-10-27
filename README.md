@@ -24,3 +24,4 @@ npm run dev
 - **Tailwind CSS / Styled Components** - Styling
 - **React Query / Redux Toolkit** - State management
 - **Vite / Create React App** - Build tool
+...!!
